@@ -1,0 +1,166 @@
+header{
+    height: 100vh;
+    background-image: url(pexels-marlon-trottmann-5819116.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    
+}
+img{
+    width: 100%;
+}
+.logo-img{
+    width: 150px;
+}
+.nav-link {
+    color: aliceblue;
+}
+ 
+header h1{
+    font-size: 6vw;
+}
+.card-section{
+    padding: 50px 0;
+    background-color: #9cbbdd;
+}
+.my-card{
+    height: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #e2e1e1;
+}
+.latest-product{
+    padding: 50px 0;
+
+}
+.brands{
+    padding: 50px 0;
+    background-color: #9cbbdd;
+
+}
+body{
+    font-family: 'Play', sans-serif;
+}
+
+
+
+/* початк каруселі */
+*{
+    box-sizing: border-box;
+}
+.long-slider{
+    position: relative;
+    /* height: 400px; */
+    width: 100%;
+    /* overflow: hidden; */
+    /* transform: translateX(); */
+}
+.arrow-left, .arrow-right{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+    background-color:rgba(128, 127, 127, 0.658);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    transition: 0.8s;
+    font-size: 4em;
+}
+.arrow-left:hover, .arrow-right:hover{
+    background-color:rgba(90, 86, 86, 0.745) ;
+
+}
+.arrow-right{
+    right: 0;
+}
+
+.item-wrap{
+    /* position: absolute; */
+    display: flex;
+    /* height: 400px; */
+    transition: 0.7s ease-out;
+    max-width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.slider-item{
+    /* width: 450px; */
+    margin-left: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+/* .item-wrap img{ */
+    /* height: 100%; */
+/* } */
+
+
+
+/* Works on Chrome, Edge, and Safari */
+
+.item-wrap::-webkit-scrollbar {
+    height: 4px;               /* висота/ширина скрола */
+  }
+  
+  .item-wrap::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);        /*смужка */
+  }
+  
+  .item-wrap::-webkit-scrollbar-thumb { /*те, що їздить */
+    background-color: rgb(228, 228, 228);    
+    border-radius: 20px;      
+    /* border: 3px solid rgb(163, 163, 163);  */
+  }
+  .item-wrap::-webkit-scrollbar-thumb:hover { /*те, що їздить */
+    background-color: rgb(0, 0, 0);    
+  
+  }
+/* Works on Firefox */
+.item-wrap{
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+  }
+
+
+.product-card{
+    padding: 20px;
+    margin-left: 20px;
+    width: 300px;
+    background-color: #9cbbdd;
+    transition: 0.8s;
+ }
+.product-card:hover{
+    transform: scale(1.1);
+    background-color: #70a0d3;
+
+ }
+.tel-btn{
+     font-size: 1.1rem;
+     border: 2px solid rgb(0, 0, 0);
+ }
+ .tel-btn:hover{
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.slider{
+    padding: 50px 0;
+}
+
+/* кінець каруселі */
+
+footer{
+    margin-top: 40px;
+    padding: 30px 0;
+    color: aliceblue;
+    background-color: #3f3f3f;
+}
+
+.social{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
